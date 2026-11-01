@@ -1,0 +1,110 @@
+/* =========================
+   Common slide layout
+   ========================= */
+
+.slide-content {
+  position: absolute;
+  top: 12%;
+  bottom: 3%;
+  left: 2%;
+  right: 2%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-height: 0;
+}
+
+
+/* =========================
+   Four-GIF grid
+   ========================= */
+
+.gif-grid {
+  flex: 7;
+  min-height: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.gif-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.gif-cell img {
+  display: block;
+
+  width: 100%;
+  height: 0;
+  flex: 1;
+
+  min-height: 0;
+  object-fit: contain;
+}
+
+/* =========================
+   Gif Grid 2x2
+   ========================= */
+
+.gif-grid {
+  flex: 7;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.gif-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.gif-cell img {
+  display: block;
+  width: 100%;
+  height: 0;
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+}
+
+
+
+/* =========================
+   Bullet section
+   ========================= */
+
+.bullet-center {
+  flex: 3;
+  min-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullet-center ul {
+  width: 100%;
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+.bullet-center li {
+  margin-bottom: 0.25em;
+}
